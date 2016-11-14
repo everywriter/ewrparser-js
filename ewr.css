@@ -1,0 +1,388 @@
+/**
+// ewr.js 1.0.0
+// http://www.opensource.org/licenses/mit-license.php
+// 壹写作 http://www.1xiezuo.com
+// Copyright (c) 2014-2019 1xiezuo.com
+// Ewr电子书格式样式表文件
+*/
+.book {
+	cursor: text;
+	letter-spacing: 0;
+	line-height: 150%;
+	text-align: left;
+	padding: 15px 30px;
+	color: #111;
+	font-family: '微软雅黑','Helvetica Neue', 'Nimbus Sans L', Arial, sans-serif;
+}
+
+.book .charpter {
+}
+
+.book .charpter-title {
+	text-align: center;
+	font-size: 120%;
+	font-weight: 600;
+	margin: 8px 0;
+	margin-bottom: 30px;
+}
+
+.book .charpter-title.volume {
+	font-size: 150%;
+	margin: 8px 0;
+	opacity: .7;
+	margin-bottom: 30px;
+}
+
+.book .block {
+	text-align: center;
+	font-weight: 600;
+	margin: 8px 0;
+	margin-bottom: 20px;
+	opacity: .8;
+}
+
+.book .scene {
+	position: relative;
+	font-weight: 600;
+	margin-bottom: 20px;
+	opacity: .8;
+}
+
+.book .scene .scenenum {
+	position: absolute;
+	right: 2px;
+	font-size: 50%;
+	font-style: italic;
+	opacity: .8;
+}
+
+.book .scene .scenenum:before {
+	content: '#';
+}
+
+.book .cover-name {
+	font-size: 150%;
+	line-height: 100%;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.book .cover-name.large {
+	font-size: 200%;
+	line-height: 150%;
+}
+
+.book .cover-author {
+	margin-bottom: 15px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.book .cover-source {
+	margin-bottom: 15px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.book .cover-notes {
+	margin-bottom: 15px;
+	margin-top: 120px;
+	margin-right: 15px;
+	text-align: right;
+}
+
+.book .cover-star {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.book .cover-secret {
+	position: absolute;
+	width: 90%;
+	opacity: .5;
+	top: 40%;
+	text-align: center;
+}
+
+.book .cover-operate {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.book .transition {
+	text-align: right;
+	font-weight: bold;
+	opacity: .8
+}
+
+.book .transition.left-aligned {
+	text-align: left
+}
+
+.book p.picture {
+	max-width: 100%;
+	text-align: center;
+}
+
+.book .picture img {
+	max-width: 100%;
+}
+
+.book p.centered {
+	text-align: center;
+}
+
+.book .italic {
+	font-style: italic;
+}
+
+.book .bold {
+	font-weight: bold;
+}
+
+.book .underline {
+	text-decoration: underline;
+}
+
+.book .number {
+	font-size: 70%;
+	font-style: italic;
+	float: right;
+	margin-right: 5px;
+	opacity: .5;
+}
+
+.book p {
+	margin-top: 15px;
+}
+
+.book p.action {
+	text-indent: 30px;
+}
+
+.book.script p.action {
+	text-indent: 0;
+}
+.book.juben p.action {
+	text-indent: 0;
+}
+
+.book p.actor_summary {
+    padding-top: 10px;
+    clear: both;
+	font-weight: 600;
+}
+
+.book p.actor_description {
+    opacity: .8;
+}
+
+.book p.actor_picture{
+    margin: 0;
+    padding: 8px 20px 8px 0;
+    float: left;
+}
+.book p.actor_picture img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.book div.dialogue {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 68%;
+}
+
+.book div.dialogue p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.book div.dialogue p.character {
+	font-weight: bold;
+	margin-left: 0;
+	text-align: center
+}
+
+.book div.dialogue p.parenthetical {
+	text-align: center
+}
+
+.book div.dual-dialogue {
+	margin: 15px 0 8px 2%;
+	width: 95%;
+}
+
+.book div.dual-dialogue div.dialogue {
+	display: inline-block;
+	margin: 0;
+	width: 45%;
+}
+
+.book div.dual-dialogue div.dialogue p.character {
+	margin-top: 0;
+}
+
+.book div.dual-dialogue div.dialogue.right {
+	float: right;
+}
+
+/**timeline*/
+
+.book.chat {
+	cursor: text;
+	letter-spacing: 0;
+	line-height: 150%;
+	text-align: left;
+	padding: 0;
+    padding: 10px 10px;
+}
+
+
+.book.chat p.action {
+	margin: 10px 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 90%;
+    color: #666;
+    background-color: #f6f6f6;
+}
+
+.book.chat .timeline{
+	text-align: center;
+	font-weight: normal;
+    font-size: 70%;
+	margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.book.chat .timeline span{
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #cecece;
+}
+
+.book.chat div.dialogue {
+    position: relative;
+    width: auto;
+    margin: 0;
+	margin-top: 20px;
+    padding-top: 30px;
+    
+    
+}
+
+.book.chat div.dialogue.left {
+   padding-left: 64px;
+   padding-right: 80px;
+   text-align: left;
+}
+
+.book.chat div.dialogue.right {
+    padding-left: 80px;
+    padding-right: 64px;
+    text-align: right;
+}
+
+.book.chat div.dialogue p.cpicture {
+    top: 8px;
+    position: absolute;
+}
+
+.book.chat div.dialogue.left p.cpicture {
+   left: 0;
+}
+
+.book.chat div.dialogue.right p.cpicture {
+	right: 0;
+}
+.book.chat div.dialogue p.cpicture img{
+    width: 48px;
+    height:48px;
+}
+
+.book.chat div.dialogue p.character {
+    font-weight: normal;
+    position: absolute;
+    font-size: 60%;
+    color: #737373;
+    top: 0;
+}
+
+.book.chat div.dialogue.left p.character {
+    left: 64px;
+}
+
+.book.chat div.dialogue.right p.character {
+    right: 64px;
+}
+
+.book.chat div.dialogue p.dialoguecontent{
+    color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    position:relative;
+}
+
+.book.chat div.dialogue p.dialoguecontent img{
+    max-width: 180px;
+    max-height: 240px;
+    display: inline-block;
+    break-before: always;
+}
+
+.book.chat div.dialogue.left p.dialoguecontent{
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    display: inline-block;
+}
+
+
+.book.chat div.dialogue.right p.dialoguecontent{
+    color: #000;
+    background-color: #a0e75a;
+    border: 1px solid #7cd052;
+    text-align: left;
+    display: inline-block;
+    
+}
+
+.book.chat div.dialogue.left p.dialoguecontent:before,.book.chat div.dialogue.left p.dialoguecontent:after{
+    content:"";display:block;
+    border-width:9px;
+    position:absolute; left:-18px; 
+    top:12px;  
+    border-style: solid;
+    border-color: transparent #d0d0d0 transparent transparent;
+    font-size:0;
+    line-height:0;
+}
+
+.book.chat div.dialogue.right p.dialoguecontent:before,.book.chat div.dialogue.right p.dialoguecontent:after{
+    content:"";display:block;
+    border-width:9px;
+    position:absolute; right:-18px; 
+    top:12px;  
+    border-style: solid;
+    border-color: transparent  transparent transparent #7cd052;
+    font-size:0;
+    line-height:0;
+}
+.book.chat div.dialogue.left p.dialoguecontent:after{
+    left:-16px;
+    border-color:transparent #fff transparent transparent;  
+}
+
+.book.chat div.dialogue.right p.dialoguecontent:after{
+    right:-16px;
+    border-color:transparent  transparent transparent #a0e75a;  
+}
