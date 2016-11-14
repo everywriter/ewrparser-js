@@ -14,7 +14,7 @@
 * sample .ewr file of e-book,script,novel and chat.
 
 # Documents
-* [chinese developer](http://www.1xiezuo.com/developer) , [world developer](http://www.ciiat.com)
+* [chinese developer](http://www.1xiezuo.com/ewr) , [world developer](http://www.ciiat.com)
 
 
 
